@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    
+}
+header img{
+    width: 30px;
+   padding: 20px;  
+   
+}
+header #btn-altera-tema{
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.card-pokemon{
+    background-color: brown;
+    width: 10%;
+    padding: 10px;
+    border-radius: 12px;
+}
+.gif{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.informacoes{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.733);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.poke-grama{
+    background-color: rgb(100, 201, 0);
+    color: black;
+    border-radius: 7px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;    
+}
+.poke-veneno{
+
+    background-color: #ec7be2;
+    color: black;
+    border-radius: 7px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.poke-fogo{
+    background-color: #de7c29;
+    color: black;
+    border-radius: 7px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.poke-agua{
+    background-color: #5785dd;
+    color: black;
+    border-radius: 7px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: auto;
+    display: block;
+}
+.poke-inseto{
+    background-color: #939f14;
+    color: black;
+    border-radius: 7px;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.lista-dubla{
+    display: flex;
+    list-style: none    ;
+}
+.listagem-pokemon{
+    display: flex;
+    align-content: flex-start;
+      
+}
