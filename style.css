@@ -1,94 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+    --principal:#918f8f;
+    --grama: #7ac74c;
+    --veneno: #df67ddfb;
+    --fogo: #ee8130;
+    --agua: #6390f9;
+    --inseto:#388d26;
+    
+}
+
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-around;
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    background-color: var(--principal);
+    margin: 0 auto;
+    color: #333333;
     
-}
-header img{
-    width: 30px;
-   padding: 20px;  
    
 }
-header #btn-altera-tema{
-    border: none;
-    outline: none;
-    background-color: white;
-}
 
-.card-pokemon{
-    background-color: brown;
-    width: 10%;
-    padding: 10px;
-    border-radius: 12px;
-}
-.gif{
-    width: 50%;
-    display: block;
-    margin: auto;
-}
-.informacoes{
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.733);
-    border-radius: 5px;
-    font-size: 17px;
-    padding: 5px 5px;
+/* CABECALHO*/
+
+header{
     display: flex;
     justify-content: space-between;
+    padding: 30px;
+    
     
 }
-.poke-grama{
-    background-color: rgb(100, 201, 0);
-    color: black;
-    border-radius: 7px;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0px;    
+header .logo,
+header .img-button{
+    width: 30px;
+   cursor: pointer;
 }
-.poke-veneno{
+header .btn-altera-tema{
+    background-color: transparent;
+    border: none;
+}
 
-    background-color: #ec7be2;
-    color: black;
-    border-radius: 7px;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0px;
+/* CONTEUDO PRINCIPAL*/
+main{
+    padding: 25px;
+    text-transform: capitalize;
 }
-.poke-fogo{
-    background-color: #de7c29;
-    color: black;
-    border-radius: 7px;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0px;
+main ul {
+    list-style: none;
 }
-.poke-agua{
-    background-color: #5785dd;
-    color: black;
-    border-radius: 7px;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0px;
-    margin: auto;
-    display: block;
-}
-.poke-inseto{
-    background-color: #939f14;
-    color: black;
-    border-radius: 7px;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0px;
-}
-.lista-dubla{
+ main .listagem-pokemon{
     display: flex;
-    list-style: none    ;
+    flex-wrap: wrap;
+    gap:30px;
+    
+    justify-content: center;
 }
-.listagem-pokemon{
+main .card-pokemon{
+    background-color: #d8e3ec;
+    width: 200px;
     display: flex;
-    align-content: flex-start;
-      
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
+    border-radius: 15px;
+   align-items: center;
+   transition: 0.4s ease-in-out;
 }
+main .card-pokemon:hover{
+    background-color: #85ffc6;
+    transform: scale(1.10)  ;
+}
+
+main .card-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;  
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 15px
+}
+main .card-pokemon  .informacoes span{
+    padding: 5px; 
+    text-transform: uppercase;
+
+}
+ main .gif{
+    width: 100px;
+ }
+ main .lista-dubla{
+    display: flex;
+    gap: 20px;
+ }
+ main .poke-grama{
+    background-color: var(--grama);
+    padding: 10px;
+    border-radius: 15px;
+ }
+ main .poke-veneno{
+    background-color: var(--veneno);
+    padding: 10px;
+    border-radius: 15px;
+ }
+ main .poke-fogo{
+    background-color: var(--fogo);
+    padding: 10px;
+    border-radius: 15px;
+    
+ }
+ main .poke-agua{
+    background-color: var(--agua);
+    padding: 10px;
+    border-radius: 15px;
+ }
+ main .poke-inseto{
+    background-color: var(--inseto);
+    padding: 10px;
+    border-radius: 15px;
+ }
+ main .descricao{
+    overflow-y: scroll;
+    max-height: 80px; 
+    text-align: center;
+    padding-right: 10px; 
+    font-size: 13px;
+ }
+
