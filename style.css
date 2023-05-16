@@ -36,11 +36,11 @@ header{
     
 }
 header .logo,
-header .img-button{
+header #img-button{
     width: 30px;
    cursor: pointer;
 }
-header .btn-altera-tema{
+header #btn-altera-tema{
     background-color: transparent;
     border: none;
 }
@@ -130,3 +130,15 @@ main .card-pokemon  .informacoes span{
     font-size: 13px;
  }
 
+
+ .modo-escuro{
+    background-color: #212121;
+    color: white;
+
+ }
+
+ .modo-escuro .card-pokemon {
+    background-color: #707070;
+
+ }
+ 
