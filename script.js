@@ -9,11 +9,13 @@ btnAlterador.addEventListener("click", () => {
     
    const modoEscuroAtivo = body.classList.contains("modo-escuro")
    
+body.classList.toggle("modo-escuro") // Toggle ALternar entre colocar a class e tira a class
+
    if(modoEscuroAtivo){
-    body.classList.remove("modo-escuro")
+    
     imgTrocaBotaoTema.setAttribute("src", "imagens/sun.png")
    }else {
-    body.classList.add("modo-escuro")
+    
     imgTrocaBotaoTema.setAttribute("src", "imagens/moon.png")
 
    }
